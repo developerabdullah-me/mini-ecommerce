@@ -1,0 +1,1458 @@
+/*======== :: index.html CSS :: *******
+:: 1.0 WEB FONTS 
+:: 2.0 GLOBAL Variable Define CSS
+:: 3.0 COMMON CSS 
+:: 4.0 HEADER CSS 
+:: 5.0 HeroSlider CSS
+:: 6.0 Shopping Card CSS 
+:: 7.0 New Arrival CSS
+:: 8.0 Big Saving Zone CSS
+:: 9.0 Banner CSS
+:: 10.0 Categories for Men CSS
+:: 11.0 Categories for Women CSS
+:: 12.0 Brands CSS
+:: 13.0 Limelight CSS
+:: 14.0 Feedback (Testimonial) CSS
+:: 15.0 Footer CSS
+===========*************========== */
+
+/* ========================= */
+/* :: 1.0 WEB FONTS  */
+/* ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/* ================================== */
+/* :: 2.0 GLOBAL Variable Define CSS  */
+/* ================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    /* Background Color */
+    --bg-white:#fff;
+    --bg-light-white:#F6F6F6;
+    --bg-gray:#3C4242;
+    --bg-card-mini-shodow:0 0.188rem 1.25rem 0px rgba(0, 0, 0,0.06);
+    --bg-card-big-shodow:0 2rem 5rem rgb(0,0,0,0.06);
+
+
+    /* Text Color */
+    --primary-font:'core_sans_c45_regular';
+    --secondary-font:'caustenregular';
+    --text-white:#fff;
+    --text-light-white:#F6F6F6;
+    --text-black:#191919;;
+    --text-gray:#3C4242;
+    --text-light-gray:#807D7E;
+    --text-yellow:#EDD146;
+}
+
+/* ========================= */
+/* :: 3.0 COMMON CSS */
+/* ========================= */
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    background:var(--bg-white);
+    overflow-x:hidden;
+}
+h1 {
+	color: var(--text-white);
+	font-size: 4.875rem;
+	line-height: 93.622px;
+	letter-spacing: 0.315px;
+	font-weight: 400;
+	font-family: 'core_sans_c75_extrabold';
+	width: 439px;
+	margin: 30px 0;
+}
+
+h2 {
+    color: var(--text-white);
+    font-family: 'core_sans_c75_extrabold';
+    font-size: 2.125rem;
+    line-height: 3.125rem;
+    letter-spacing: 0.208px;
+}
+
+h3{
+    font-size: 2.125rem;
+    font-family: 'core_sans_c55_medium';
+    color: var(--text-gray);
+    line-height: 33.5px;
+    letter-spacing: 0.68px; 
+    margin: 0;
+}
+.section-title {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 70px;
+}
+.section-title h3::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 30px;
+    background-color: #8A33FD;
+    top: -3px;
+    left: 0;
+    border-radius: 10px;
+}
+
+section,
+.section {
+    position: relative;
+}
+  
+p {
+    margin-bottom: 0;
+} 
+a {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+a,
+a:hover,
+a:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}  
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ol li,
+ul li {
+    list-style: none;
+}
+button,
+button:focus{
+    outline:none;
+    box-shadow: none;
+}
+
+img {
+    width: 100%;
+}
+
+input,
+input:focus,
+input:focus-visible,
+input:active {
+    outline: none;
+    border: none;
+}
+
+
+::placeholder {
+    color: var(--text-light-gray);
+}
+
+.btn a {
+	font-size: 1.5rem;
+	font-family: 'caustenbold';
+	color: var(--text-gray);
+	background-color: var(--bg-white);
+	text-align: center;
+	padding: 1rem 4.5rem;
+	border-radius: 8px;
+	display: inline-block;
+	line-height: 1.25;
+}
+.btn a:hover {
+    color: var(--text-white);
+    background-color: #8A33FD;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .25);
+    box-shadow: 0 5px 10px 0 rgba(12, 0, 46, .25);
+}
+.btn-2 {
+	width: 111px;
+	height: 34px;
+	border: 1px solid var(--bg-white);
+	font-family: 'caustenmedium';
+	text-align: center;
+	line-height: 30px;
+	border-radius: 4px;
+	transition: .3s;
+	cursor: pointer;
+}
+.btn-2 a {
+    font-size: 12px;
+    color: var(--text-white);
+}
+.btn-2:hover {
+    background-color: var(--bg-white);
+}
+.btn-2:hover a {
+    color: var(--text-gray);
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background: transparent;
+}
+
+/* ================================== */
+/* :: 4.0 HEADER CSS Start*/
+/* ================================== */
+.navbar {
+    padding-top: 25px;
+	padding-bottom: 25px;
+}
+.navStyle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#logo {
+    width: 91px;
+    height: auto;
+}
+#navItemLinks {
+    width: 483px;
+    margin-left: 87px;
+}
+.navbar-nav .nav-item {
+	margin-left: 40px;
+}
+.navbar-nav .nav-item:first-child {
+	margin-left: 0;
+}
+.nav-item .nav-link {
+    color: var(--text-light-gray);
+    font-size: 22px;
+    font-family: 'caustenmedium';
+    padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right: 0;
+	padding-left: 0;
+    line-height: 1;
+}
+.nav-item .nav-link.pageActive {
+	color: var(--text-gray);
+	font-family: 'caustenextra_bold';
+	cursor: default;
+}
+.nav-item .nav-link:hover {
+    color: var(--text-gray);
+}
+#navInput {
+    width: 267px;
+    height: auto;
+    margin: 0 76px;
+}
+.navInput {
+	display: flex;
+	align-items: center;
+	background-color: var(--bg-light-white);
+	border-radius: 8px;
+	overflow: hidden;
+}
+.navInput i, .navInput input {
+    font-size: 16px;
+    background-color: var(--bg-light-white);
+    padding: 12px;
+    color: var(--text-light-gray);
+}
+.navInput input {
+	width: 100%;
+	padding-left: 0;
+    font-family: var(--secondary-font);
+}
+.navInfo {
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+}
+.info-icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--bg-light-white);
+    border-radius: 8px;
+    line-height: 44px;
+    text-align: center;
+    margin-left: 12px;
+}
+.info-icon:first-child {
+    margin-left: 0;
+}
+.info-icon a i {
+    font-size: 16px;
+    line-height: 44px;
+    border-radius: 8px;
+    color: var(--text-light-gray);
+    display: inline-block;
+    transition: .3s;
+}
+.info-icon:hover a i {
+    color: #8A33FD;
+}
+.header-scrolled {
+	position: fixed;
+	padding-top: 20px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: var(--bg-white);
+	-webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .25);
+	box-shadow: 0 5px 10px 0 rgba(12, 0, 46, .1);
+	z-index: 3;
+	transition: .3s;
+}
+/* ================================== */
+/* :: 4.0 HEADER CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 5.0 HeroSlider CSS Start*/
+/* ================================== */
+.hero-slider-active {
+    position: relative;
+}
+.slider-bg {
+    min-height: 716px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slider-content {
+    padding-top: 129px;
+    margin-left: 90px;
+}
+.slider-mini-heading h4 {
+    font-size: 2rem;
+    color: var(--text-white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 37.771px;
+    letter-spacing: 0.157px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.heading-color-info p {
+	color: var(--text-white);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 47.214px;
+	letter-spacing: 0.315px;
+	text-transform: lowercase;
+	margin-bottom: 45px;
+}
+.hero-slider-active .owl-nav button {
+    position: absolute;
+    top: 283px;
+    left: 35px;
+    transition: .3s;
+}
+.hero-slider-active .owl-nav button.owl-next {
+    left: auto;
+    right: 35px;
+}
+.hero-slider-active .owl-nav button i {
+    font-size: 2.75rem;
+    color: var(--text-white);
+    transition: .3s;
+}
+.hero-slider-active .owl-nav button:hover i {
+    color: #8A33FD;
+}
+.hero-slider-active .owl-nav button.owl-prev:hover {
+    transition: .3s;
+	left: 25px;
+}
+.hero-slider-active .owl-nav button.owl-next:hover {
+    transition: .3s;
+	right: 25px;
+}
+.hero-slider-active.owl-theme .owl-dots {
+	position: absolute;
+	bottom: 45px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.hero-slider-active.owl-theme .owl-dots .owl-dot span {
+	width: 63px;
+	height: 10px;
+	margin: 0 1px;
+	background: var(--bg-white);
+    opacity: .5;
+	border-radius: 12px 0 0 12px;
+}
+.hero-slider-active.owl-theme .owl-dots .owl-dot:nth-child(2) span {
+	border-radius: 0 12px 12px 0;
+}
+.hero-slider-active.owl-theme .owl-dots .owl-dot.active span, .hero-slider-active.owl-theme .owl-dots .owl-dot span:hover {
+    opacity: 1;
+}
+/* ================================== */
+/* :: 5.0 HeroSlider CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 5.0 :: 6.0 Shopping Card CSS Start*/
+/* ================================== */
+#shopping-card {
+    padding: 130px 0 60px;
+}
+.shopping-card-wrapper {
+    position: relative;
+    margin-bottom: 40px;
+}
+.shopping-card-img img {
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.40);
+}
+.shopping-card-inner {
+    position: absolute;
+    top: 67px;
+    left: 30px;
+}
+.shopping-card-inner.sci-2 {
+    top: 57px;
+}
+.shopping-card-mini-heading p {
+    color: var(--text-white);
+    font-size: 1.125rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 30.067px;
+    letter-spacing: 0.251px;
+    margin-bottom: 24px;
+}
+.shopping-card-heading h3 {
+    color: var(--text-white);
+    font-family: 'core_sans_c75_extrabold';
+    width: 264px;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.shopping-card-offer p {
+    color: var(--text-white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 25.056px;
+    letter-spacing: 0.251px;
+    margin-bottom: 41.5px;
+}
+.sco-2 p {
+    margin-bottom: 30px;
+}
+.shopping-card-btn.card-1 a, .shopping-card-btn.card-2 a {
+    color: var(--text-white);
+    font-size: 1.25rem;
+    font-family: 'core_sans_c75_extrabold';
+    line-height: 30.132px;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+}
+.card-1 a:hover {
+    margin-left: 10px;
+    color: #8A33FD;
+}
+.card-2 a:hover {
+    margin-left: 10px;
+    color: var(--text-yellow);
+}
+/* ================================== */
+/* :: 5.0 :: 6.0 Shopping Card CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 7.0 New Arrival CSS Start*/
+/* ================================== */
+#new-arrival {
+    padding-bottom: 80px;
+}
+.arrival-slider {
+    margin: 0 40px;
+}
+.arraival-slider-img img {
+	border-radius: 12px;
+}
+.arrival-slider-active {
+    position: relative;
+}
+.arrival-slider-active .owl-nav button {
+    position: absolute;
+    top: 140px;
+    left: -45px;
+}
+.arrival-slider-active .owl-nav button.owl-next {
+    left: auto;
+    right: -45px;
+}
+.arrival-slider-active .owl-nav button i {
+    color: var(--text-gray);
+    transition: .3s;
+}
+.arrival-slider-active .owl-nav button:hover i {
+    color: #8A33FD;
+}
+.arrival-slider-heading h5 {
+    color: var(--text-gray);
+    font-family: 'caustenbold';
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    padding: 32px 0 0 7px;
+    transition: .3s;
+}
+.arrival-slider-wrapper:hover h5 {
+    margin-left: 10px;
+    color: #8A33FD;
+}
+/* ================================== */
+/* :: 7.0 New Arrival CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 8.0 Big Saving Zone CSS Start*/
+/* ================================== */
+#saving-zone {
+    padding-bottom: 100px;
+}
+.saving-zone-card {
+    position: relative;
+    margin-bottom: 20px;
+}
+.saving-zone-card-img img {
+    border-radius: 12px;
+}
+.saving-zone-card-inner {
+    position: absolute;
+    top: 64px;
+    left: 20px;
+    color: var(--text-white);
+}
+.szci-2 {
+    left: auto;
+    right: 26px;
+    text-align: right;
+}
+.szci-3 {
+    left: auto;
+    right: 17px;
+}
+
+.saving-zone-card-heading h4 {
+    width: 150px;
+    font-size: 28px;
+    font-family: 'core_sans_c55_medium';
+    line-height: 38.431px;
+    letter-spacing: 0.56px;
+    margin: 0;
+    margin-bottom: 9px;
+}
+.saving-zone-card-mini-heading p {
+    font-family: 'caustensemi_bold';
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.saving-zone-card-offer p {
+    font-size: 18px;
+    font-family: 'caustenbold';
+    margin-bottom: 30px;
+}
+.saving-zone-card-icon i {
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-left: 45px;
+}
+.szcicon-2 i{
+    margin-left: 0;
+    margin-right: 45px;
+}
+.szb-2 {
+    margin-left: auto;
+}
+.saving-zone-scnd-card {
+    position: relative;
+}
+.saving-zone-scnd-card-inner {
+	position: absolute;
+	top: 45px;
+	right: 120px;
+	color: var(--text-gray);
+}
+.saving-zone-scnd-card-heading h4 {
+    font-family: 'core_sans_c55_medium';
+    font-size: 32px;
+    line-height: 43.922px;
+    letter-spacing: 0.64px;
+    width: 113px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.saving-zone-scnd-card-mini-heading p {
+    font-size: 16px;
+    font-family: 'caustensemi_bold';
+    margin-bottom: 10px;
+}
+.saving-zone-scnd-card-offer p {
+    font-size: 20px;
+    font-family: 'caustenbold';
+    margin-bottom: 30px;
+}
+.saving-zone-scnd-card-icon {
+    font-size: 30px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+}
+.saving-zone-scnd-btn.btn-2 {
+    width: 132px;
+    height: 36px;
+    line-height: 32px;
+    border-color: var(--bg-gray);
+}
+.saving-zone-scnd-btn.btn-2 a {
+    font-family: 'caustensemi_bold';
+    color: var(--text-gray);
+}
+.saving-zone-scnd-btn.btn-2:hover {
+    background-color: var(--bg-gray);
+}
+.saving-zone-scnd-btn.btn-2:hover a {
+    color: var(--text-white);
+}
+/* ================================== */
+/* :: 8.0 Big Saving Zone CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 9.0 Banner CSS Start*/
+/* ================================== */
+#banner {
+    margin-bottom: 100px;
+}
+.banner-area {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.first-banner, .second-banner {
+    position: relative;
+    width: 50%;
+}
+.banner-content {
+    position: absolute;
+    top: 183px;
+    left: 74px;
+}
+.banner-paragraph p {
+    color: var(--text-white);
+    font-size: 20px;
+    font-family: 'caustenlight';
+    letter-spacing: 1px;
+    margin: 20px 0 40px;
+    max-width: 451px;
+    line-height: 1.15;
+}
+.banner-btn.btn a {
+    font-size: 18px;
+    padding: 12px 44px;
+    display: inline-block;
+}
+/* ================================== */
+/* :: 9.0 Banner CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 10.0 Categories for Men CSS Start*/
+/* ================================== */
+#catagory-men {
+    margin-bottom: 60px;
+}
+.catagory-wrapper {
+	margin-bottom: 40px;
+}
+.catagory-img img {
+    transition: .3s;
+    border-radius: 12px;
+}
+.catagory-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: first baseline;
+	margin-top: 15px;
+}
+.catagory-heading h5 {
+    color: #2A2F2F;
+    font-family: 'caustenbold';
+    font-size: 17.875px;
+    line-height: 27.93px;
+    letter-spacing: -0.715px;
+    transition: .3s;
+    margin-bottom: 0;
+}
+.catagory-sub-heading p {
+    color: #7F7F7F;
+    font-size: 13.407px;
+    font-family: 'caustenmedium';
+    line-height: 27.93px;
+    letter-spacing: -0.536px;
+    transition: .3s;
+}
+.catagory-icon i {
+    font-size: 25px;
+    color: #797979;
+    transition: .3s;
+}
+.catagory-wrapper:hover .catagory-img img {
+	scale: 1.03;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+.catagory-wrapper:hover .catagory-content .catagory-text .catagory-heading h5 {
+    color: #8A33FD;
+}
+.catagory-wrapper:hover .catagory-content .catagory-text .catagory-sub-heading p:hover, .catagory-wrapper:hover .catagory-content .catagory-icon a i:hover {
+    color: #8A33FD;
+}
+/* ================================== */
+/* :: 10.0 Categories for Men CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 11.0 Categories for WoMen CSS Start*/
+/* ================================== */
+#catagory-women {
+    margin-bottom: 50px;
+}
+/* ================================== */
+/* :: 11.0 Categories for WoMen CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 12.0 Brands CSS Start*/
+/* ================================== */
+#brands {
+    margin-bottom: 70px;
+}
+.brands-wrapper {
+    background-color: var(--bg-gray);
+    border-radius: 12px;
+    border: 1px solid #323232;
+}
+.brands-heading-content {
+    margin: 43px 0 67px;
+    text-align: center;
+}
+.brands-heading h2 {
+    color: var(--text-white);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'core_sans_c75_extrabold';
+    margin-bottom: 25px;
+}
+.brands-sub-heading p {
+    color: var(--text-white);
+    text-align: center;
+    font-size: 22px;
+    font-family: 'caustenregular';
+}
+.brands-sub-heading p span {
+    color: #FBD103;
+    font-size: 22px;
+    font-family: 'caustenbold';
+}
+.brands-area{
+    margin-bottom: 60px;
+    padding: 0 120px;
+}
+.brand-logo {
+    width: 177.5px;
+    height: 85.5px;
+    border-radius: 12px;
+    background-color: var(--bg-white);
+}
+.brands-active.owl-carousel .owl-item img {
+    width: auto;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+/* ================================== */
+/* :: 12.0 Brands CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 13.0 Limelight CSS Start*/
+/* ================================== */
+#limelight {
+    margin-bottom: 60px;
+}
+.limelight-wrapper {
+    transition: .3s;
+}
+.limelight-inner {
+    position: relative;
+    margin-bottom: 40px;
+}
+.single-limglight {
+	display: flex;
+	flex-direction: column;
+}
+.limelight-icon button {
+	position: absolute;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	line-height: 37px;
+    border: none;
+	background-color: var(--bg-white);
+	top: 26px;
+	right: 20px;
+	text-align: center;
+    transition: .3s;
+}
+.limelight-icon button i {
+	font-size: 14px;
+	color: var(--text-white);
+	-webkit-text-stroke-width: 1.5px;
+	-moz-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: var(--text-gray);
+	-moz-text-stroke-color: var(--text-gray);
+	transition: .3s;
+}
+.limelight-icon button:hover i {
+    -webkit-text-stroke-color: #f00;
+    -moz-text-stroke-color: #f00;
+    color: #f00;
+}
+.limelight-img img {
+    border-radius: 12px;
+}
+.limelight-img {
+    transition: .3s;
+    border-radius: 12px;
+}
+.limelight-content {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	transition: .3s;
+	align-items: end;
+}
+.limelight-header h3 {
+    color: var(--text-gray);
+    font-size: 16px;
+    font-family: 'caustensemi_bold';
+}
+.limelight-sub-header {
+	display: inline-block;
+}
+.limelight-sub-header p {
+    color: var(--text-light-gray);
+    font-size: 14px;
+    font-family: 'caustenmedium';
+}
+.limelight-price {
+    display: flex;
+}
+.limelight-price span {
+    font-size: 14px;
+    font-family: 'caustenbold';
+    text-align: center;
+    padding: 10px 16px;
+    color: var(--text-gray);
+    border-radius: 8px;
+    background-color: var(--bg-light-white);
+    transition: .3s;
+}
+.limelight-wrapper:hover .limelight-img {
+    scale: 1.03;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+    border-radius: 13px;
+}
+.limelight-wrapper:hover .limelight-header h3 {
+    color: #8A33FD;
+}
+.limelight-wrapper:hover .limelight-sub-header p:hover {
+    color: #8A33FD;
+}
+.limelight-wrapper:hover .limelight-price span {
+    background-color: var(--bg-gray);
+    color: var(--text-white);
+}
+.limelight-wrapper:hover .limelight-price:hover span {
+    background-color: #8A33FD;
+    cursor: pointer;
+}
+/* ================================== */
+/* :: 13.0 Limelight CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 14.0 Feedback (Testimonial) CSS Start*/
+/* ================================== */
+#feedback {
+    margin-bottom: 100px;
+}
+.feedback-inner {
+    padding: 23px;
+    border-radius: 10px;
+    border: 1.8px solid #BEBCBD;
+}
+.feedback-top {
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-img img {
+    width: auto;
+}
+.feedback-ratings span i {
+    color: #EDD146;
+}
+.feedback-heading h4 {
+    color: var(--text-gray);
+    font-size: 22px;
+    font-family: 'core_sans_c55_medium';
+    letter-spacing: 0.44px;
+    margin: 20px 0;
+}
+.feedback-paragraph p {
+    overflow: hidden;
+    color: var(--text-light-gray);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    letter-spacing: 0.28px;
+}
+.extra-padding {
+    padding-bottom: 55px;
+}
+.active-feedback-slider.owl-theme .owl-dots .owl-dot.active span, .active-feedback-slider.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--bg-gray);
+}
+.active-feedback-slider.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 15px;
+}
+/* ================================== */
+/* :: 14.0 Feedback (Testimonial) CSS End*/
+/* ================================== */
+
+/* ================================== */
+/* :: 15.0 Footer CSS Start*/
+/* ================================== */
+footer {
+    background-color: var(--bg-gray);
+    padding: 59px 0;
+}
+.footer-heading h4 {
+    color: var(--text-light-white);
+    font-size: 28.579px;
+    font-family: 'caustenbold';
+    line-height: 61.988px;
+}
+.footer-nav {
+    margin-top: 16px;
+}
+.footer-nav ul li a, .footer-mail a, .footer-address a {
+    color: var(--text-light-white);
+    font-size: 18px;
+    font-family: 'caustenmedium';
+    line-height: 39.042px;
+    margin-bottom: 5px;
+}
+.footer-address a {
+    display: block;
+}
+.footer-nav ul li a:hover {
+    padding-left: 5px;
+    color: #8A33FD;
+}
+.footer-mail a:hover, .footer-address a:hover {
+    color: #8A33FD;  
+}
+#location {
+    margin-left: 20px;
+}
+.footer-social-area {
+    margin-bottom: 43px;
+}
+.footer-social-area .row {
+    justify-content: center;
+}
+.footer-social-area .row .col-xl-3 {
+    align-self: end;
+}
+.footer-social-link a {
+    display: inline-block;
+    margin-right: 9px;
+}
+.footer-social-link a i {
+    width: 37.024px;
+    height: 37.024px;
+    border-radius: 10.7px;
+    color: #2A2F2F;
+    background-color: var(--bg-light-white);
+    text-align: center;
+    line-height: 37.024px;
+    transition: .2s ease-in-out;
+}
+.footer-social-link a:hover i {
+    transform: translateY(-5px);
+    background-color: #8A33FD;
+    color: var(--text-white);
+}
+.footer-app-heading h3 {
+    color: var(--text-light-white);
+    font-size: 28.579px;
+    font-family: 'caustenbold';
+    line-height: 61.988px;
+    margin-bottom: 19px;
+}
+.footer-apps {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-apps img {
+    width: auto;
+}
+.footer-catagory {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 7px;
+    border-top: 1px solid #BEBCBD;
+    border-bottom: 1px solid #BEBCBD;
+}
+.footer-catagory-title {
+    margin-left: 100px;
+}
+.footer-catagory-title h4 a {
+    color: var(--text-light-white);
+    font-size: 28.579px;
+    font-family: 'caustenbold';
+    line-height: 57.158px;
+}
+.footer-catagory-title h4 a:hover, .footer-catagory-icon a:hover i {
+    color: #EDD146;
+}
+.footer-catagory-icon {
+	margin-right: 32px;
+}
+.footer-catagory-icon a i {
+    font-size: 17px;
+    color: var(--text-light-white);
+}
+.copyright p {
+    color: var(--text-white);
+    font-size: 18px;
+    font-family: 'caustenbold';
+    line-height: 36px;
+    margin-top: 37px;
+}
+.copyright p a {
+    color: #FBD103;
+}
+.copyright p a:hover {
+    color: #ff3c3c;
+}
+/* ================================== */
+/* :: 15.0 Footer CSS End*/
+/* ================================== */
+
+
+/* Scroll Back To Top */
+#scrollUp{
+    position:fixed;
+    right:2%;
+    bottom:3%;
+    height:50px;
+    width:50px;
+    border-radius: 0.25rem;
+    text-align: center;
+    cursor:pointer;
+    z-index: 500;
+    display:none;
+    -webkit-transition:all 0.4s ease-in-out 0s;
+    transition:all 0.4s ease-in-out 0s;
+    background: #8A33FD;
+}
+#scrollUp span{
+    line-height: 50px;
+    color: var(--text-white);
+}
+#scrollUp.scrollActive{
+    display:block;
+}
+
+
+
+/*======== :: product-list.html CSS :: *******
+
+=====Home Page=====
+
+:: 0.0 Menu-Bar
+:: 1.0 Left-Info Bar CSS
+:: 1.1 Main-Filter CSS
+:: 1.2 Price Filter CSS
+:: 1.3 Colors Filter CSS
+:: 1.4 Size Filter CSS
+:: 1.5 Dress Style Filter CSS
+:: 2.0 Right-product-bar CSS
+:: 2.1 Product Tab CSS
+:: 3.0 ProductDetailsParagraph CSS
+:: 4.0 Price List CSS
+===========*************========== */
+
+/* ================================== */
+/* :: 0.0 Menu-Bar & Page CSS */
+/* ================================== */
+.navBorder {
+    border-bottom: 1px solid #BEBCBD;
+}
+#filter_and_product {
+    padding-bottom: 60px;
+}
+/* ================================== */
+/* :: 1.0 Left-Info Bar CSS */
+/* ================================== */
+#allFilters {
+    border: 1px solid rgba(190, 188, 189, 0.4);
+    border-top: unset;
+}
+
+/* ================================== */
+/* :: 1.1 Main-Filter CSS Start */
+/* ================================== */
+#main-filter, #price-filter, #colors-filter, #size-filter {
+    border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+}
+.filters-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+    transition: .3s;
+}
+.filters-heading:hover {
+    background-color: rgba(138, 137, 137, 0.1);
+}
+.filters-heading h4 {
+    color: #807D7E;
+    font-size: 22px;
+    font-family: 'caustensemi_bold';
+    letter-spacing: 0.44px;
+    margin-bottom: 0;
+}
+button {
+    border: none;
+    background: transparent;
+}
+.filters-icon button i {
+    color: #807D7E;
+}
+ul.filter-nav {
+    margin: 31px 0;
+}
+ul.filter-nav li a {
+    color: #8A8989;
+    font-family: 'caustensemi_bold';
+    padding: 9px 32px;
+    display: block;
+    position: relative;
+}
+ul.filter-nav li a::after {
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    right: 32px;
+    transform: translateY(50%);
+}
+ul.filter-nav li a:hover {
+    background-color: rgba(138, 137, 137, 0.1);
+}
+/* ================================== */
+/* :: 1.1 Main-Filter CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 1.2 Price-Filter CSS Start */
+/* ================================== */
+
+#price-filter .filters-icon {
+    margin-right: 5px;
+}
+.range-slider .output {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    text-align: center;
+}
+/* ================================== */
+/* :: 1.2 Price-Filter CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 1.3 Color-Filter CSS Start */
+/* ================================== */
+.all-colors {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 38px;
+}
+.color-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 252px;
+    justify-content: space-between;
+}
+.color-inner {
+    text-align: center;
+    transition: .3s;
+}
+.color-inner:hover {
+    scale: 1.1;
+}
+.color-box button span {
+    width: 36.729px;
+    height: 36.729px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.color-name button h5 {
+    color: #8A8989;
+    font-size: 14px;
+    font-family: 'caustensemi_bold';
+    margin-bottom: 0;
+}
+/* ================================== */
+/* :: 1.3 Color-Filter CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 1.4 Size Filter CSS Start */
+/* ================================== */
+.all-sizes {
+    margin: 40px 35px;
+    width: 223px;
+    height: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.size button {
+    width: 61px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid #BEBCBD;
+    opacity: 0.8;
+    margin-bottom: 18px;
+    text-align: center;
+    transition: .3s;
+}
+.size button:hover {
+    background-color: rgba(190, 188, 189, 0.3);
+}
+.size:nth-child(7) button, .size:nth-child(8) button, .size:nth-child(9) button {
+    margin-bottom: 0;
+}
+.size button span h5 {
+    color: var(--text-gray);
+    font-size: 14px;
+    font-family: 'caustensemi_bold';
+    margin-bottom: 0;
+}
+/* ================================== */
+/* :: 1.4 Size Filter CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 2.1 Product Tab CSS Start */
+/* ================================== */
+.product-list-tab {
+	margin-left: 25px;
+	margin-top: 55px;
+}
+.product-list-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.page-header h2 {
+    color: #3F4646;
+    font-size: 22px;
+    font-family: 'caustensemi_bold';
+    line-height: 1;
+    margin-bottom: 0;
+}
+.tab-btn .nav-tabs {
+    border: unset;
+}
+.tab-btn .nav-tabs .nav-item.show .nav-link, .tab-btn .nav-tabs .nav-link.active {
+    border: unset;
+    color: #8A33FD;
+    font-size: 22px;
+    font-family: 'caustensemi_bold';
+}
+.tab-btn .nav-tabs .nav-link {
+    border: unset;
+    color: #3F4646;
+    font-size: 22px;
+    font-family: 'caustensemi_bold';
+}
+.tab-btn ul li:last-child {
+    margin-left: 25px;
+}
+/* ================================== */
+/* :: 2.1 Product Tab CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 3.0 ProductDetailsParagraph CSS Start */
+/* ================================== */
+#product-details-paragraph {
+    padding-bottom: 100px;
+}
+#product-details-paragraph .section-title {
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+.pd-paragraph-inner {
+	padding-left: 16px;
+	padding-right: 10px;
+}
+.pd-heading h3 {
+    color: var(--text-light-gray);
+    font-size: 20px;
+    font-family: 'caustensemi_bold';
+    line-height: 33.5px;
+    letter-spacing: 0.4px;
+    padding: 25px 0;
+}
+.pd-paragraph p {
+    color: #807D7E;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    line-height: 33.5px;
+    letter-spacing: 0.4px;
+}
+p.scnd-para {
+    margin-top: 20px;
+}
+.pd-btn button {
+    color: #807D7E;
+    font-size: 20px;
+    font-family: 'core_sans_c55_medium';
+    line-height: 33.5px;
+    letter-spacing: 0.4px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.pd-btn button:hover {
+    color: #8A33FD;
+}
+/* ================================== */
+/* :: 3.0 ProductDetailsParagraph CSS End */
+/* ================================== */
+
+/* ================================== */
+/* :: 4.0 Price List CSS Start */
+/* ================================== */
+#price-list {
+    padding-bottom: 100px;
+}
+#price-list .section-title {
+    padding-left: 15px;
+    margin-bottom: 50px;
+}
+.price-list-box {
+    background-color: rgba(246, 246, 246, 0.6);
+    border-radius: 12px;
+    position: relative;
+}
+.price-list-box::after {
+    content:'';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(190, 188, 189, 0.4);
+    top: 0;
+    bottom: 0;
+    right: 257px;
+}
+.price-list-head {
+    border-bottom: 1px solid rgba(190, 188, 189, 0.4);
+}
+.price-list-heading {
+    width: 963px;
+    padding: 50px 0 50px 84px;
+}
+.price-list-heading h4 {
+    color: #3C4242;
+    font-family: 'caustensemi_bold';
+    font-size: 24px;
+    line-height: 33.5px;
+    letter-spacing: 0.48px;
+    margin-bottom: 0;
+}
+.price-list-tag {
+    width: 257px;
+    text-align: center;
+}
+.price-list-tag span {
+    color: #3C4242;
+    font-size: 24px;
+    font-family: 'caustensemi_bold';
+    line-height: 33.5px;
+    letter-spacing: 0.48px;
+}
+.price-list-body {
+    padding: 24px 0;
+}
+.single-price-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 0 26px 84px;
+    transition: .3s;
+}
+.single-price-list:hover {
+    background-color: rgba(60, 66, 66, 0.1);
+}
+.product-name {
+    width: 963px;
+}
+.product-price {
+    width: 257px;
+    height: auto;
+    text-align: center;
+}
+.product-name a, .product-price a {
+    color: #807D7E;
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-style: normal;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+}
+.single-price-list:hover a {
+    color: #8A33FD;
+}
+/* ================================== */
+/* :: 4.0 Price List CSS End */
+/* ================================== */

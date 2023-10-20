@@ -1,0 +1,1279 @@
+/* ================= */
+/* XXL Device. */
+/* ================= */
+
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1270px !important;
+    }
+}
+
+/* XL Device :1280px. */
+
+@media only screen and (max-width: 1399px) {
+    .container {
+        max-width: 1140px !important;
+    }
+    /* ================================
+    =============index.html============
+    =================================*/    
+    /* ======Header Area====== */
+    #navItemLinks {
+        margin-left: 70px;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 35px;
+    }
+    #navInput {
+        margin: 0 50px;
+    }
+    /* =====Header Area===== */
+
+    /* =====Hero Area===== */
+    .slider-mini-heading h4 {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 4.8rem;
+        line-height: 90px;
+        letter-spacing: 0;
+        margin: 25px 0;
+    }
+    .heading-color-info p {
+        font-size: 30px;
+    }
+    .btn a {
+        font-size: 20px;
+        padding: 1rem 4rem;
+    }
+    /* =====Hero Area===== */
+
+    /* =====Shopping Card Area===== */
+    #shopping-card {
+        padding: 100px 0 60px;
+    }
+    .shopping-card-inner {
+        top: 50px;
+    }
+    .shopping-card-inner.sci-2 {
+        top: 35px;
+    }
+    .shopping-card-mini-heading p {
+        font-size: 1rem;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .shopping-card-heading h3 {
+        line-height: 35px;
+        font-size: 30px;
+    }
+    .shopping-card-offer p {
+        margin-bottom: 30px;
+    }
+    /* =====Shopping Card Area===== */
+
+    /* =====Big Saving Zone Area===== */
+    .szci-2 {
+        right: 20px;
+    }
+    .szci-3 {
+        right: 16px;
+        text-align: right;
+    }
+    .saving-zone-card-heading h4 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .saving-zone-card-mini-heading {
+        display: none;
+    }
+    .saving-zone-card-offer p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .saving-zone-card-icon i {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .szcicon-3 {
+        text-align: center;
+    }
+    .saving-zone-btn.btn-2.szb-3 {
+        margin-left: auto;
+    }
+    .saving-zone-scnd-card-inner {
+        right: 45px;
+        text-align: center;
+    }
+    .saving-zone-scnd-card-heading h4 {
+        font-size: 28px;
+        line-height: 20px;
+        width: 100%;
+    }
+    .saving-zone-scnd-card-offer p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .saving-zone-scnd-card-icon {
+        font-size: 28px;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+    .saving-zone-scnd-btn.btn-2 {
+        margin: auto;
+    }
+    /* =====Big Saving Zone Area===== */
+
+    /* =====Banner Area===== */
+    .banner-content {
+        top: 100px;
+        left: 40px;
+    }
+    /* =====Banner Area===== */
+
+    /* =====Brands Area===== */
+    .brand-logo {
+        width: 160px;
+        height: 80px;
+    }
+    .brands-active.owl-carousel .owl-item img {
+        width: 65%;
+        margin: auto;
+        padding-top: 15px;
+        text-align: center;
+    }
+    /* =====Brands Area===== */
+
+    /* =====Feedback Area===== */
+    #feedback {
+        margin-bottom: 70px;
+    }
+    /* =====Feedback Area===== */
+    /* ================================
+    =============index.html============
+    =================================*/
+}
+
+/* ================= */
+/* Large Device :992px. */
+/* ================= */
+
+@media only screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+    /* ================================
+    =============index.html============
+    =================================*/
+    /* =====Home Area===== */
+    div#logo {
+        order: 3;
+        margin-top: 40px;
+    }
+    div#navItemLinks {
+        order: 4;
+        margin-top: 40px;
+    }
+    div#navInput {
+        order: 1;
+        width: 70%;
+        margin: 0;
+    }
+    div#navInfo {
+        order: 2;
+        width: 30%;
+    }
+    .navStyle {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navbar-brand img {
+        width: auto;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+    .info-icon {
+        margin-left: 15px;
+    }
+    .header-scrolled .navStyle {
+        margin-top: -80px;
+    }
+    /* =====Home Area===== */
+
+    /* =====Hero Area===== */
+    .slider-content {
+        padding-top: 100px;
+    }
+    .slider-mini-heading h4 {
+        font-size: 26px;
+    }
+    h1 {
+        font-size: 4rem;
+        line-height: 75px;
+    }
+    .heading-color-info p {
+        font-size: 28px;
+    }
+    .btn a {
+        font-size: 18px;
+        padding: 1rem 3rem;
+    }
+    /* =====Hero Area===== */
+
+    /* =====Shopping Area===== */
+    #shopping-card {
+        padding: 50px 0 20px;
+    }
+    .section-title {
+        margin-bottom: 50px;
+    }
+    .shopping-card-heading h3 {
+        line-height: 30px;
+        font-size: 28px;
+    }
+    /* =====Shopping Area===== */
+
+    /* =====New Arrival===== */
+    #new-arrival {
+        padding-bottom: 40px;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .section-title h3::before {
+        width: 5px;
+        height: 24px;
+        top: 0;
+        left: 0;
+    }
+    .arrival-slider-active .owl-nav button {
+        top: 85px;
+    }
+    .arrival-slider-heading h5 {
+        font-size: 18px;
+    }
+    /* =====New Arrival===== */
+
+    /* =====Big Saving Zone Area===== */
+    #saving-zone {
+        padding-bottom: 60px;
+    }
+    .saving-zone-card-inner {
+        top: 65px;
+    }
+    .saving-zone-card-heading h4 {
+        font-size: 28px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .saving-zone-card-icon i {
+        margin-left: 45px;
+    }
+    .szcicon-2 i {
+        margin-right: 50px;
+    }
+    .szcicon-3 i {
+        margin-left: 100px;
+    }
+    .saving-zone-scnd-card-icon {
+        margin-bottom: 10px;
+    }
+    .saving-zone-card-inner.szci-3 .szb-3 {
+        margin-left: auto;
+    }
+    .hero-slider-active.owl-theme .owl-dots .owl-dot span {
+        width: 55px;
+        height: 9px;
+    }
+    /* =====Big Saving Zone Area===== */
+
+    /* =====Banner Area===== */
+    #banner {
+        margin-bottom: 60px;
+    }
+    .banner-content {
+        top: 70px;
+        left: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .banner-paragraph p {
+        font-size: 18px;
+    }
+    /* =====Banner Area===== */
+
+    /* =====Catagory for Men Area===== */
+    #catagory-men {
+        margin-bottom: 30px;
+    }
+    .catagory-heading h5 {
+        font-size: 18px;
+    }
+    .catagory-sub-heading p {
+        font-size: 14px;
+    }
+    .catagory-icon i {
+        font-size: 18px;
+    }
+    .catagory-wrapper {
+        margin-bottom: 30px;
+    }
+    /* =====Catagory for Men Area===== */
+
+    /* =====Brands Area===== */
+    #brands {
+        margin-bottom: 60px;
+    }
+    .brands-heading-content {
+        margin: 30px 0 50px;
+        text-align: center;
+    }
+    .brands-heading h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .brand-logo {
+        width: 125px;
+        height: 60px;
+    }
+    .brands-active.owl-carousel .owl-item img {
+        width: 60%;
+        padding-top: 10px;
+    }
+    /* =====Brands Area===== */
+
+    /* =====Limelight Area===== */
+    .limelight-icon button {
+        top: 10px;
+        right: 10px;
+    }
+    .limelight-content {
+        display: unset;
+        margin-top: 15px;
+    }
+    .limelight-header {
+        margin-bottom: 10px;
+    }
+    .limelight-sub-header {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .limelight-price {
+        display: unset;
+        float: right;
+        margin-top: -30px;
+    }
+    /* =====Limelight Area===== */
+
+    /* =====Feedback Area===== */
+    .extra-padding {
+        padding-bottom: 40px;
+    }
+    /* =====Feedback Area===== */
+
+    /* =====Footer Area===== */
+    footer {
+        background-color: var(--bg-gray);
+        padding: 40px 0;
+    }
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+    #location {
+        margin-left: 0;
+    }
+    .footer-heading h4 {
+        line-height: 1;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .footer-social-area .row {
+        justify-content: space-between;
+    }
+    .footer-app-heading h3 {
+        line-height: 1;
+    }
+    .footer-catagory-title {
+        margin-left: 0;
+    }
+    /* =====Footer Area===== */
+    /* ================================
+    =============index.html============
+    =================================*/
+}
+
+/* ================= */
+/* Medium Device :768px. */
+/* ================= */
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 720px;
+    }
+    /* ================================
+    =============index.html============
+    =================================*/
+    /* =====Home===== */
+    .navbar {
+        padding: 0;
+    }
+    .navStyle {
+        position: relative;
+        margin: 10px 0;
+    }
+    .header-scrolled .navStyle {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    div#navInput {
+        display: none;
+    }
+    div#navInfo {
+        display: none;
+    }
+    div#logo {
+        margin-top: 0;
+    }
+    div#navItemLinks {
+        margin-top: 50px;
+    }
+    div#navbarNavAltMarkup {
+        background-color: seashell;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+        box-shadow: 0 5px 10px 0 rgba(12, 0, 46, .25);
+        width: 75%;
+        position: absolute;
+        top: 80px;
+        right: 40px;
+        z-index: 3;
+        overflow: hidden;
+    }
+    .header-scrolled .navStyle #navbarNavAltMarkup {
+        top: 60px;
+    }
+    .navbar-toggler {
+        padding: 0;
+        font-size: 1.25rem;
+        line-height: 1;
+        width: auto;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+    }
+    .navbar-toggler:focus {
+        border: unset;
+        box-shadow: unset;
+    }
+    .fa-solid.fa-bars-staggered.navbar-toggler-icon {
+        display: inline;
+        transition: .2s ease-out;
+    }
+    .fa-solid.fa-bars-staggered.navbar-toggler-icon:hover {
+        color: #8A33FD;
+    }
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-left: 0;
+        border-bottom: 1px solid #ddd;
+        display: block;
+        transition: .3s;
+        padding: 0 25px;
+    }
+    .navbar-nav .nav-item:last-child {
+        margin-bottom: 0;
+        border-bottom: unset;
+    }
+    .navbar-nav .nav-item:hover, .navbar-nav .nav-item.hoverActive {
+        background-color: #eee;
+    }
+    .nav-item .nav-link {
+        font-size: 20px;
+        display: block;
+        padding: 20px;
+        transition: .3s;
+    }
+    .nav-item .nav-link:hover {
+        transform: translateX(10px);
+    }
+    .nav-item .nav-link.pageActive {
+        transform: translateX(0);
+    }
+    /* =====Home===== */
+
+    /* =====Hero Slider===== */
+    .slider-bg {
+        min-height: 650px;
+    }
+    .slider-mini-heading h4 {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 0;
+        margin: 15px 0;
+        width: 65%;
+        line-height: 60px;
+    }
+    .heading-color-info p {
+        font-size: 26px;
+    }
+    .btn a {
+        font-size: 16px;
+        padding: 1rem 2.75rem;
+    }
+    .hero-slider-active.owl-theme .owl-dots .owl-dot span {
+        width: 50px;
+        height: 8px;
+    }
+    /* =====Hero Slider===== */
+
+    /* =====Shopping Card===== */
+    .shopping-card-inner, .shopping-card-inner.sci-2 {
+        top: 20px;
+        left: 15px;
+    }
+    .shopping-card-heading h3 {
+        line-height: .75;
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+    .shopping-card-offer p {
+        margin-bottom: 20px;
+    }
+    /* =====Shopping Card===== */
+
+    /* =====Arrival Zone===== */
+    .section-title {
+        margin-bottom: 40px;
+        padding-left: 15px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .section-title h3::before {
+        width: 4px;
+        height: 20px;
+        top: 1px;
+    }
+    /* =====Arrival Zone===== */
+
+    /* =====Saving Zone===== */
+    #saving-zone {
+        padding-bottom: 40px;
+    }
+    .saving-zone-card-inner {
+        left: 5%;
+        top: 10%;
+    }
+    .szci-2 {
+        right: 5%;
+    }
+    .btn-2 {
+        width: 140px;
+        height: 45px;
+        line-height: 44px;
+    }
+    .btn-2 a {
+        font-size: 16px;
+    }
+    .saving-zone-card-heading h4, .saving-zone-scnd-card-heading h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        width: 55%;
+        line-height: 1.15;
+    }
+    .szci-2 h4, .szci-3 h4 {
+        margin-left: auto;
+    }
+    .saving-zone-card-offer p {
+        font-size: 14px;
+    }
+    .saving-zone-card-mini-heading {
+        display: none;
+    }
+    .btn-2 {
+        width: 100px;
+        height: 35px;
+        line-height: 32px;
+    }
+    .btn-2 a {
+        font-size: 13px;
+    }
+    .saving-zone-scnd-card-inner {
+        right: 5%;
+        top: 10%;
+        text-align: right;
+    }
+    .saving-zone-scnd-card-heading h4 {
+        margin-left: auto;
+    }
+    .saving-zone-scnd-card-mini-heading p {
+        display: none;
+    }
+    .saving-zone-card-icon i {
+        display: none;
+    }
+    .szcicon-2 i {
+        margin-right: 60px;
+    }
+    .szci-3 {
+        right: 10px;
+    }
+    .saving-zone-scnd-card {
+        margin-bottom: 40px;
+    }
+    .saving-zone-scnd-card-icon {
+        display: none;
+    }
+    .saving-zone-scnd-btn.btn-2 {
+        width: 120px;
+        height: 40px;
+        line-height: 36px;
+    }
+    .saving-zone-scnd-btn.btn-2 {
+        margin: unset;
+        margin-left: auto;
+    }
+    /* =====Saving Zone===== */
+
+    /* =====Banner===== */
+    #banner {
+        margin-bottom: 70px;
+    }
+    .first-banner, .second-banner {
+        width: 100%;
+    }
+    .banner-content {
+        top: 7%;
+        left: 5%;
+    }
+    h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+        line-height: 1.15;
+    }
+    .banner-paragraph p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .banner-btn.btn a {
+        font-size: 16px;
+        padding: 10px 32px;
+        display: inline-block;
+    }
+    /* =====Banner===== */
+
+    /* =====Men&Women===== */
+    .catagory-heading h5 {
+        font-size: 16px;
+    }
+    /* =====Men&Women===== */
+
+    /* =====Brands===== */
+    .brands-heading h2 {
+        font-size: 36px;
+    }
+    .brand-logo {
+        width: 100px;
+        height: 50px;
+    }
+    /* =====Brands===== */
+
+    /* =====Limelight===== */
+    #limelight {
+        margin-bottom: 20px;
+    }
+    .limelight-icon button {
+        width: 30px;
+        height: 30px;
+        line-height: 32px;
+    }
+    .limelight-icon button i {
+        font-size: 13px;
+    }
+    .limelight-content {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .limelight-header {
+        margin-bottom: 5px;
+    }
+    .limelight-header h3 {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .limelight-sub-header {
+        display: inline-block;
+        margin: 0;
+    }
+    .limelight-price {
+        float: none;
+    }
+    .limelight-price span {
+        font-size: 14px;
+        padding: 12px 30px;
+    }
+    .limelight-price {
+        float: none;
+        display: inline-block;
+        margin-top: 25px;
+    }
+    /* =====Limelight===== */
+
+    /* =====Feedback===== */
+    .extra-padding {
+        padding-bottom: 55px;
+    }
+    /* =====Feedback===== */
+
+    /* =====Brands===== */
+    .brands-heading h2 {
+        font-size: 40px;
+    }
+    /* =====Brands===== */
+
+    /* =====Footer===== */
+    footer {
+        padding: 35px 0 15px;
+    }
+    .footer-heading h4 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .footer-nav {
+        margin-top: 10px;
+    }
+    .footer-nav ul li a, .footer-mail a, .footer-address a {
+        font-size: 16px;
+        line-height: 1.75;
+        margin-bottom: 0;
+    }
+    .footer-app-heading h3 {
+        font-size: 22px;
+    }
+    .footer-catagory-title h4 a {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .copyright p {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    /* =====Footer===== */
+    /* ================================
+    =============index.html============
+    =================================*/
+}
+
+/* ================= */
+/* Random CSS for MediumSmall Device. */
+/* ================= */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+        padding: 0 15px;
+    } 
+    /* ================================
+    =============index.html============
+    =================================*/
+    /* =====Home===== */
+    div#navItemLinks {
+        margin-top: 0;
+    }
+    .header-scrolled .navStyle {
+        margin-top: -5px;
+    }
+    .navbar-toggler {
+        top: 12px;
+    }
+    .slider-content {
+        padding-top: 80px;
+        margin-left: 20px;
+    }
+    .hero-slider-active.owl-theme .owl-dots .owl-dot span {
+        width: 40px;
+        height: 7px;
+    }
+    .nav-item .nav-link {
+        font-size: 18px;
+    }
+    /* =====Home===== */
+
+    /* =====HeroSlider===== */
+    .slider-bg {
+        min-height: 550px;
+    }
+    .slider-mini-heading h4 {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 44px;
+        line-height: 1;
+    }
+    .heading-color-info p {
+        font-size: 22px;
+        margin-bottom: 60px;
+    }
+    .btn {
+        padding: 0;
+    }
+    .btn a {
+        font-size: 16px;
+        padding: 14px 40px;
+    }
+    /* =====HeroSlider===== */
+
+    /* =====ShoppingCard===== */
+    .shopping-card-inner, .shopping-card-inner.sci-2 {
+        top: 60px;
+    }
+    .shopping-card-mini-heading p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .shopping-card-heading h3 {
+        font-size: 34px;
+        width: 100%;
+    }
+    /* =====ShoppingCard===== */
+
+    /* =====NewArrival===== */
+    #new-arrival {
+        padding-bottom: 40px;
+    }
+    .section-title {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    .section-title h3::before {
+        top: -1px;
+    }
+    .arrival-slider-heading h5 {
+        font-size: 20px;
+        padding: 0;
+        margin-top: 15px;
+    }
+    /* =====NewArrival===== */
+
+    /* =====Big Saving Zone===== */
+    .saving-zone-card-img img {
+        width: 242px;
+        height: 162px;
+        object-fit: cover;
+    }
+    .saving-zone-card-inner {
+        top: 5%;
+    }
+    .saving-zone-card-heading h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .saving-zone-card-offer p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .btn-2 {
+        width: 80px;
+        height: 30px;
+        line-height: 27px;
+    }
+    .btn-2 a {
+        font-size: 12px;
+    }
+    .saving-zone-scnd-card-inner {
+        right: 5%;
+    }
+    .saving-zone-scnd-card-heading h4 {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .saving-zone-scnd-card-offer p {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .saving-zone-scnd-btn.btn-2 {
+        width: 90px;
+        height: 30px;
+        line-height: 28px;
+    }
+    /* =====Big Saving Zone===== */
+
+    /* =====Banner===== */
+    .banner-area {
+        flex-direction: column-reverse;
+    }
+    .banner-img img {
+        height: 300px;
+        object-fit: none;
+    }
+    .banner-content {
+        top: 15%;
+        text-align: center;
+        left: 0;
+        padding: 0 15px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .banner-btn.btn a {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    /* =====Banner===== */
+
+    /* =====Men&Women===== */
+    #catagory-men, #catagory-women {
+        margin-bottom: 0;
+    }
+    .catagory-heading h5 {
+        font-size: 18px;
+    }
+    .catagory-icon i {
+        font-size: 20px;
+    }
+    .catagory-sub-heading p {
+        font-size: 15px;
+    }
+    /* =====Men===== */
+
+    /* =====Brands===== */
+    .brands-heading-content {
+        margin: 30px 0 40px;
+    }
+    .brands-heading h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .brands-sub-heading p {
+        font-size: 16px;
+    }
+    .brands-sub-heading p span {
+        font-size: 20px;
+    }
+    .brand-logo {
+        margin: auto;
+        width: 115px;
+        height: 50px;
+    }
+    .brands-active.owl-carousel .owl-item img {
+        width: 55%;
+    }
+    .brands-area {
+        margin-bottom: 40px;
+        padding: 0 50px;
+    }
+    /* =====Brands===== */
+
+    /* =====Limelight===== */
+    #limelight {
+        margin-bottom: 0;
+    }
+    .limelight-content {
+        margin-top: 15px;
+        flex-direction: row;
+    }
+    .limelight-header h3 {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .limelight-sub-header p {
+        font-size: 15px;
+    }
+    .limelight-price span {
+        font-size: 16px;
+    }
+    /* =====Limelight===== */
+
+    /* =====Feedback===== */
+    #feedback {
+        margin-bottom: 40px;
+    }
+    .extra-padding {
+        padding-bottom: 40px;
+    }
+    /* =====Feedback===== */
+
+    /* =====Footer===== */
+    .footer-heading h4 {
+        font-size: 22px;
+    }
+    #footer-social-link {
+        margin-bottom: 40px;
+    }
+    .footer-apps {
+        justify-content: unset;
+    }
+    .playstore {
+        margin-right: 15px;
+    }
+    .footer-catagory-title h4 a {
+        font-size: 22px;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+    /* =====Footer===== */
+    /* ================================
+    =============index.html============
+    =================================*/
+}
+
+/* ================= */
+/* Extra small Device. */
+/* ================= */
+
+@media only screen and (max-width: 575px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    /* ================================
+    =============index.html============
+    =================================*/
+    /* =====HeroSlider===== */
+    .footer-catagory-title h4 a {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .slider-bg {
+        min-height: 500px;
+    }
+    .slider-mini-heading h4 {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 1.15;
+        margin: 0;
+    }
+    .heading-color-info p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .btn a {
+        font-size: 15px;
+        padding: 12px 35px;
+    }
+    .slider-bg {
+        min-height: 500px;
+    }
+    /* =====HeroSlider===== */
+
+    /* =====ShoppingCard===== */
+    #shopping-card {
+        padding: 60px 0 20px;
+    }
+    .shopping-card-inner, .shopping-card-inner.sci-2 {
+        top: 30px;
+    }
+    .shopping-card-mini-heading p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .shopping-card-heading h3 {
+        font-size: 28px;
+    }
+    .shopping-card-heading h3 {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .shopping-card-offer p {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .shopping-card-btn.card-1 a, .shopping-card-btn.card-2 a {
+        font-size: 1rem;
+    }
+    /* =====ShoppingCard===== */
+
+    /* =====NewArrival===== */
+    .arrival-slider {
+        margin: 0 15px;
+    }
+    .section-title {
+        margin-bottom: 15px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .arrival-slider-active .owl-nav button {
+        top: 35%;
+        left: -30px;
+    }
+    .arrival-slider-active .owl-nav button.owl-next {
+        right: -30px;
+    }
+    .arrival-slider-heading h5 {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    /* =====NewArrival===== */
+
+
+    /* =====SavingZone===== */
+    .saving-zone-card-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .saving-zone-card-heading h4 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .saving-zone-card-offer p, .saving-zone-scnd-card-offer p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .btn-2, .saving-zone-scnd-btn.btn-2 {
+        width: 110px;
+        height: 35px;
+        line-height: 32px;
+    }
+    .btn-2 a {
+        font-size: 12px;
+    }
+    .saving-zone-scnd-card {
+        margin-bottom: 20px;
+    }
+    .szci-3 {
+        right: 5%;
+    }
+    .saving-zone-scnd-card-img img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    .saving-zone-scnd-card-heading h4 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .saving-zone-scnd-card-mini-heading p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .saving-zone-scnd-card-icon {
+        font-size: 24px;
+    }
+    /* =====SavingZone===== */
+
+    /* =====Banner===== */
+    #banner {
+        margin-bottom: 40px;
+    }
+    .banner-img img {
+        height: 250px;
+    }
+    .banner-content {
+        margin-top: 5%;
+        top: 0;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .banner-paragraph p {
+        font-size: 15px;
+        line-height: 1.25;
+        margin: 10px 0 20px;
+    }
+    .banner-btn.btn a {
+        font-size: 14px;
+        padding: 9px 30px;
+    }
+    /* =====Banner===== */
+
+    /* =====Men&Women===== */
+    .catagory-content {
+        margin-top: 25px;
+    }
+    .catagory-heading h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .catagory-sub-heading p {
+        font-size: 14px;
+    }
+    .catagory-icon i {
+        font-size: 18px;
+    }
+    /* =====Men&Women===== */
+
+    /* =====Brands===== */
+    .brands-heading-content {
+        margin: 20px 0 30px;
+    }
+    .brands-heading h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    /* =====Brands===== */
+
+    /* =====Limelight===== */
+    #limelight {
+        margin-bottom: 0;
+    }
+    .limelight-content {
+        margin-top: 20px;
+    }
+    .limelight-header h3 {
+        font-size: 14px;
+    }
+    .limelight-sub-header p {
+        font-size: 12px;
+    }
+    .limelight-price {
+        margin-top: 25px;
+        display: inline-block;
+    }
+    .limelight-price span {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    /* =====Limelight===== */
+
+    /* =====Feedback===== */
+    #limelight {
+        margin-bottom: 0;
+    }
+    /* =====Feedback===== */
+
+    /* =====Footer===== */
+    footer {
+        padding: 40px 0 20px;
+    }
+    .footer-heading h4 {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+    .footer-nav ul li a, .footer-mail a, .footer-address a {
+        font-size: 15px;
+    }
+    .footer-app-heading h3 {
+        font-size: 22px;
+    }
+    .footer-catagory-title h4 a {
+        font-size: 20px;
+        line-height: 1;
+    }
+    .copyright p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    /* =====Footer===== */
+    /* ================================
+    =============index.html============
+    =================================*/    
+}
